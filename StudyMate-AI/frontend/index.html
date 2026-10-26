@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' http://127.0.0.1:5000 http://localhost:5000; style-src 'self'; script-src 'self'; frame-ancestors 'none'">
+  <title>StudyMate AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>🧠 StudyMate AI</h1>
+    <p class="lead">Upload your notes and get a summary and a short quiz.</p>
+
+    <form id="uploadForm">
+      <label for="noteUpload">Notes file (PDF, DOCX or TXT, up to 5 MB)</label>
+      <input type="file" id="noteUpload" accept=".txt,.pdf,.docx" required>
+      <button type="submit" id="submitBtn">Generate summary and quiz</button>
+    </form>
+
+    <p id="status" role="status" aria-live="polite"></p>
+
+    <section id="results" hidden>
+      <h2>📝 Summary</h2>
+      <div id="summary" class="card"></div>
+      <h2>❓ Quiz</h2>
+      <div id="quiz"></div>
+      <p id="score" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
