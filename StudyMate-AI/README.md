@@ -54,7 +54,7 @@ All settings are environment variables (see `.env.example`):
 | Variable | Purpose | Default |
 |---|---|---|
 | `GEMINI_API_KEY` | Your Gemini key (required) | none |
-| `GEMINI_MODEL` | Model name | `gemini-2.5-flash` |
+| `GEMINI_MODEL` | Model name | `gemini-3.8-flash` |
 | `ALLOWED_ORIGINS` | Comma-separated origins allowed by CORS | none (blocks all browsers) |
 | `MAX_UPLOAD_MB` | Upload size limit | `5` |
 | `MAX_TEXT_CHARS` | Characters of notes sent to the AI | `30000` |

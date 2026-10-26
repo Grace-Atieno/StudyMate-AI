@@ -28,7 +28,7 @@ class ConfigError(RuntimeError):
 def create_app(config=None):
     cfg = {
         "GEMINI_API_KEY": os.environ.get("GEMINI_API_KEY", ""),
-        "GEMINI_MODEL": os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"),
+        "GEMINI_MODEL": os.environ.get("GEMINI_MODEL", "gemini-3.8-flash"),
         "ALLOWED_ORIGINS": [o.strip() for o in os.environ.get("ALLOWED_ORIGINS", "").split(",") if o.strip()],
         "MAX_UPLOAD_MB": int(os.environ.get("MAX_UPLOAD_MB", "5")),
         "MAX_TEXT_CHARS": int(os.environ.get("MAX_TEXT_CHARS", "30000")),
